@@ -1,0 +1,17 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using FreeContacts.Areas.Identity.Data
+
+@inject SignInManager<FreeContactsUser> SignInManager
+@inject UserManager<FreeContactsUser> UserManager
+
+@if (SignInManager.IsSignedIn(User))
+{
+   <li class="nav-item">
+    <a class="nav-link text-white" asp-area="" asp-controller="CRUD" asp-action="Index">Contacts</a>
+   </li>
+}
+else {
+  <li class="nav-item">
+    <a class="nav-link text-white"  asp-area="Identity" asp-page="/Account/Login">Contacts</a>
+   </li>
+}

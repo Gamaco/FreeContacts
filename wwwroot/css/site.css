@@ -1,0 +1,28 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.jumbotron {
+    background-image: url("https://wallpaper.dog/large/5486507.png");
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Rubik Bubbles', cursive !important;
+}
